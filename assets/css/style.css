@@ -86,6 +86,14 @@ img {
   text-align: center;
 }
 
+.site-header .wordmark a {
+  color: var(--fg);
+}
+
+.site-header .wordmark a:hover {
+  color: var(--accent);
+}
+
 .site-nav {
   display: flex;
   flex-wrap: wrap;
