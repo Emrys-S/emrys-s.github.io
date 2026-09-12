@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Emrys Schoemaker</title>
+<meta name="description" content="Institutional engagements and independent projects by Emrys Schoemaker, including the memex self-hosted research infrastructure.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="page">
+  <header class="site-header">
+    <div class="wordmark">EMRYS SCHOEMAKER</div>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research &amp; Writing</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="section-pad">
+
+    <section aria-labelledby="engagements-heading">
+      <div class="eyebrow" id="engagements-heading" style="margin-bottom:24px;">Institutional Engagements</div>
+      <div class="engagement-grid">
+
+        <div class="engagement-card">
+          <h3>Global Digital Governance Lab</h3>
+          <p>I'm a founder of the Global Digital Governance Lab, a collaboration with the
+          Graduate Institute that bridges scholarship and international policymaking to serve
+          as a platform for global conversations on digital governance.</p>
+        </div>
+
+        <div class="engagement-card">
+          <h3>Digital Sovereignty Observatory</h3>
+          <p>I'm a co-founder and coordinator of the Digital Sovereignty Observatory (DSO),
+          which conducts interdisciplinary research, policy, and advocacy across four
+          dimensions of digital sovereignty: individual, organisational, state, international.
+          It's a collaboration with the University of Virginia, King's College London, Queen
+          Mary University of London, the Graduate Institute of Geneva, Caribou, and the United
+          Nations University &ndash; Centre for Policy Research.</p>
+        </div>
+
+        <div class="engagement-card">
+          <h3>United Nations University &ndash; Centre for Policy Research</h3>
+          <p>I am the Head of Digital and Frontier Technologies at UNU-CPR, where I lead
+          research and policy on AI, digital economies, and frontier technologies, and help
+          shape UN decision-making on emerging technology and governance challenges.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section aria-labelledby="building-heading">
+      <div class="eyebrow" id="building-heading" style="margin-bottom:20px;">Building</div>
+
+      <div class="building-panel">
+        <div class="building-header">
+          <div class="copy">
+            <h3>A self-hosted second brain</h3>
+            <p>
+              I run my own knowledge management stack. I built a system for information
+              ingestion, indexing, and retrieval &mdash; handwritten notes, reading captures, a
+              research library of tens of thousands of items &mdash; on hardware I own, queryable
+              by an LLM with citations back to source. Infrastructure as part of the research
+              practice, not just a place to store its output.
+            </p>
+          </div>
+          <a href="https://github.com/Emrys-S/memex" class="mono repo-link">github.com/Emrys-S/memex &#8599;</a>
+        </div>
+
+        <div class="pipeline">
+          <div class="mono pipeline-step">
+            <span class="label">raw/</span>
+            <span class="sub">ingestion</span>
+          </div>
+          <div class="pipeline-arrow">&rarr;</div>
+          <div class="mono pipeline-step">
+            <span class="label">index/</span>
+            <span class="sub">semantic search</span>
+          </div>
+          <div class="pipeline-arrow">&rarr;</div>
+          <div class="mono pipeline-step current">
+            <span class="label">query/</span>
+            <span class="sub">MCP + citations</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    &copy; <span id="year"></span> Emrys Schoemaker
+  </footer>
+</div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
