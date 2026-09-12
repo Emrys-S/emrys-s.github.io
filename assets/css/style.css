@@ -420,13 +420,25 @@ main {
 
 .social-links {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 18px;
   margin-top: 4px;
 }
 
 .social-links a {
-  font-size: 13px;
-  color: var(--fg-muted);
+  display: flex;
+  opacity: 0.75;
+  transition: opacity 0.15s ease;
+}
+
+.social-links a:hover {
+  opacity: 1;
+}
+
+.social-links img {
+  width: 22px;
+  height: 22px;
+  display: block;
 }
 
 /* ---------- Responsive ---------- */
