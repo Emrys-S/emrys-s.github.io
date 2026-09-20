@@ -168,6 +168,12 @@ main {
   gap: 20px;
 }
 
+.bio .bio-text {
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;
+}
+
 .focus-areas {
   display: flex;
   flex-direction: column;
