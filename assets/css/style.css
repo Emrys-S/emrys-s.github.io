@@ -166,6 +166,9 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;
 }
 
 .focus-areas {
@@ -189,6 +192,30 @@ main {
   border: 1px solid var(--border);
   border-radius: 20px;
   color: var(--fg-muted);
+  background: var(--bg-card);
+}
+
+/* ---------- About ---------- */
+
+.about-bio {
+  padding: 56px 24px 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.about-bio .bio-text {
+  align-self: stretch;
+}
+
+.cv-link {
+  font-size: 13px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 8px 14px;
   background: var(--bg-card);
 }
 
@@ -293,6 +320,37 @@ main {
   color: var(--fg-muted);
   line-height: 1.6;
   margin: 0;
+}
+
+.affiliations {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.affiliation-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--fg-muted);
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.affiliation-item:last-child {
+  border-bottom: none;
+}
+
+.affiliation-item .name {
+  color: var(--fg);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.affiliation-item .entry-link {
+  margin-left: auto;
 }
 
 .building-panel {
